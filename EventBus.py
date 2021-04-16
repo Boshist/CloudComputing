@@ -1,7 +1,7 @@
 class EventBus():
 
     def __init__(self):
-        self.subscribers = {}
+        self.subscribers = dict()
 
     def Subscribe(self, event, callback):
         if event not in self.subscribers.keys():
